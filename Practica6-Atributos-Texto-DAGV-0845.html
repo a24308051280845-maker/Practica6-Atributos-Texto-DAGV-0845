@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semáforo TRIAGE Urgencias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+
+        th {
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Colores por fila */
+        .reanimacion { color: red; }
+        .emergencia { color: orange; }
+        .urgencia { color: goldenrod; }
+        .urgencia-menor { color: green; }
+        .sin-urgencia { color: blue; }
+    </style>
+</head>
+<body>
+
+    <h1>Semáforo TRIAGE Urgencias</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo de atención</th>
+                <th>Área de atención</th>
+                <th>Tiempo de espera</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="reanimacion">
+                <td>Reanimación</td>
+                <td>Área de reanimación</td>
+                <td>Inmediato hasta 3 min</td>
+            </tr>
+            <tr class="emergencia">
+                <td>Emergencia</td>
+                <td>Área de reanimación</td>
+                <td>Inmediato hasta 10 min</td>
+            </tr>
+            <tr class="urgencia">
+                <td>Urgencia</td>
+                <td>Consultorio de primer contacto</td>
+                <td>Hasta 30 min</td>
+            </tr>
+            <tr class="urgencia-menor">
+                <td>Urgencia menor</td>
+                <td>Consultorio de primer contacto o UMF</td>
+                <td>Hasta 120 min</td>
+            </tr>
+            <tr class="sin-urgencia">
+                <td>Sin urgencia</td>
+                <td>Consultorio de primer contacto o UMF</td>
+                <td>Hasta 180 min</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
