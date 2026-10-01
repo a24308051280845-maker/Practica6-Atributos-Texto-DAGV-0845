@@ -1,44 +1,46 @@
+<!--Diego Alejandro Gomez Vazquez 5-J 0845-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Semáforo TRIAGE Urgencias</title>
+    <!-- Estilos CSS para dar formato a la página -->
     <style>
+        /* Estilo para todo el cuerpo de la página */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: Arial, sans-serif; /* Tipo de letra fácil de leer */
+            margin: 20px; /* Margen alrededor de la página */
         }
-
+        /* Estilo para el título principal */
         h1 {
-            color: navy;
-            text-align: center;
+            color: navy; /* Color azul marino */
+            text-align: center; /* Centra el texto */
         }
-
+        /* Estilo para los encabezados de la tabla */
         th {
-            background-color: dodgerblue;
-            color: white;
-            padding: 10px;
-            text-align: left;
+            background-color: dodgerblue; /* Fondo azul claro */
+            color: white; /* Letra blanca */
+            padding: 10px; /* Espacio interno para que no quede apretado */
+            text-align: left; /* Alinea el texto a la izquierda */
         }
-
+        /* Estilo para las celdas de datos */
         td {
-            padding: 10px;
-            font-weight: bold;
+            padding: 10px; /* Espacio interno de cada celda */
+            font-weight: bold; /* Texto en negrita */
         }
-
-        /* Colores por fila */
-        .reanimacion { color: red; }
-        .emergencia { color: orange; }
-        .urgencia { color: goldenrod; }
-        .urgencia-menor { color: green; }
-        .sin-urgencia { color: blue; }
+        /* Clases para cambiar el color de texto según la gravedad */
+        .reanimacion { color: red; } /* Rojo para nivel muy crítico */
+        .emergencia { color: orange; } /* Naranja para emergencia */
+        .urgencia { color: goldenrod; } /* Amarillo/Dorado para urgencia */
+        .urgencia-menor { color: green; } /* Verde para urgencia menor */
+        .sin-urgencia { color: blue; } /* Azul para casos no urgentes */
     </style>
 </head>
 <body>
-
     <h1>Semáforo TRIAGE Urgencias</h1>
-
+    <!-- Tabla que organiza la información del TRIAGE -->
     <table>
+        <!-- Encabezado con los nombres de las columnas -->
         <thead>
             <tr>
                 <th>Tipo de atención</th>
@@ -46,27 +48,33 @@
                 <th>Tiempo de espera</th>
             </tr>
         </thead>
+        <!-- Cuerpo de la tabla con la información de cada nivel -->
         <tbody>
+            <!-- Fila nivel Reanimación -->
             <tr class="reanimacion">
                 <td>Reanimación</td>
                 <td>Área de reanimación</td>
                 <td>Inmediato hasta 3 min</td>
             </tr>
+            <!-- Fila nivel Emergencia -->
             <tr class="emergencia">
                 <td>Emergencia</td>
                 <td>Área de reanimación</td>
                 <td>Inmediato hasta 10 min</td>
             </tr>
+            <!-- Fila nivel Urgencia -->
             <tr class="urgencia">
                 <td>Urgencia</td>
                 <td>Consultorio de primer contacto</td>
                 <td>Hasta 30 min</td>
             </tr>
+            <!-- Fila nivel Urgencia menor -->
             <tr class="urgencia-menor">
                 <td>Urgencia menor</td>
                 <td>Consultorio de primer contacto o UMF</td>
                 <td>Hasta 120 min</td>
             </tr>
+            <!-- Fila nivel Sin urgencia -->
             <tr class="sin-urgencia">
                 <td>Sin urgencia</td>
                 <td>Consultorio de primer contacto o UMF</td>
@@ -74,6 +82,5 @@
             </tr>
         </tbody>
     </table>
-
 </body>
 </html>
